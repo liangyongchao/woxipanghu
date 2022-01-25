@@ -1,9 +1,6 @@
-import process.StringService;
-import process.StringServiceImpl;
+import service.StringService;
+import service.StringServiceImpl;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class StringOperation {
@@ -30,7 +27,7 @@ public class StringOperation {
 
             System.out.println(testString);
 
-            result = service.Process(testString, tag);
+            result = service.process(testString, tag);
 
             System.out.println(result);
         }
